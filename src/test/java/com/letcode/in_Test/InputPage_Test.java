@@ -1,5 +1,10 @@
 package com.letcode.in_Test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.fail;
 
 import org.testng.Assert;
@@ -19,10 +24,10 @@ public class InputPage_Test extends BaseTest {
 		app().pages().inputPage().Confirmtextisreadonly();
 
 		if (!app().flow().currentUrl().equalsIgnoreCase("https://letcode.in/edit")) {
-			fail();
+			AssertJUnit.fail();
 		}
 		String actualtitle = "Interact with Input fields";
-		Assert.assertEquals(app().flow().currentTitle(), actualtitle);
+		AssertJUnit.assertEquals(app().flow().currentTitle(), actualtitle);
 
 	}
 

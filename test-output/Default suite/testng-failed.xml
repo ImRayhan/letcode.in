@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.letcode.in_Test.Select_Test">
+      <class name="com.letcode.in_Test.RadioButton_Test">
         <methods>
-          <include name="verifyingvisibletext"/>
           <include name="setUp"/>
+          <include name="verifyingRadioButton"/>
           <include name="tearUp"/>
         </methods>
-      </class> <!-- com.letcode.in_Test.Select_Test -->
+      </class> <!-- com.letcode.in_Test.RadioButton_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

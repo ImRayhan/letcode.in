@@ -1,5 +1,9 @@
 package com.letcode.in_Test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import static org.testng.Assert.fail;
 
 import org.testng.annotations.Test;
@@ -13,7 +17,7 @@ public class Select_Test extends BaseTest {
 		app().pages().SelectPage().Selecttheappleusingvisibletext("Apple");
 
 		if (!app().pages().SelectPage().YouhaveselectedApple().equals("You have selected Apple")) {
-			fail("the selected text dosnt apear");
+			AssertJUnit.fail("the selected text dosnt apear");
 
 		}
 

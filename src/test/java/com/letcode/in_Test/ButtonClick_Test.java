@@ -1,5 +1,10 @@
 package com.letcode.in_Test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.fail;
 
 import org.testng.Assert;
@@ -14,16 +19,16 @@ public class ButtonClick_Test extends BaseTest {
 		app().pages().buttonClickPage().findtheheightwidthofthebutton();
 		String expectedButtonText = app().pages().buttonClickPage().howTallAndFatIamTextVerify();
 		String actuallButtonText = "How tall & fat I am?";
-		Assert.assertEquals(expectedButtonText, actuallButtonText);
+		AssertJUnit.assertEquals(expectedButtonText, actuallButtonText);
 		String actualldUrl = "https://letcode.in/buttons";
 		String expectedUrl = app().flow().currentUrl();
 		String actuallTitle = "Interact with Button fields";
 		String expectedTitle = app().flow().currentTitle();
 		if (!actualldUrl.equals(expectedUrl)) {
-			fail("url dosnt match");
+			AssertJUnit.fail("url dosnt match");
 
 		} else if (!actuallTitle.equals(expectedTitle)) {
-			fail("title dosnt match");
+			AssertJUnit.fail("title dosnt match");
 
 		}
 
@@ -43,14 +48,14 @@ public class ButtonClick_Test extends BaseTest {
 			app().flow().back();
 
 		} else if (!expectedTitle.equals(actuallTitle)) {
-			fail("title dosnt match");
+			AssertJUnit.fail("title dosnt match");
 
 		} else {
-			fail("dosnt gone througth the page expected");
+			AssertJUnit.fail("dosnt gone througth the page expected");
 		}
 		String expectedUrl = app().flow().currentUrl();
-		Assert.assertEquals(actualldUrl, expectedUrl);
-		Assert.assertEquals(app().pages().buttonClickPage().buttonTextVerify(), "Button");
+		AssertJUnit.assertEquals(actualldUrl, expectedUrl);
+		AssertJUnit.assertEquals(app().pages().buttonClickPage().buttonTextVerify(), "Button");
 
 	}
 
@@ -64,10 +69,10 @@ public class ButtonClick_Test extends BaseTest {
 		String actuallTitle = "Interact with Button fields";
 		String expectedTitle = app().flow().currentTitle();
 		if (!actualldUrl.equals(expectedUrl)) {
-			fail("url dosnt match");
+			AssertJUnit.fail("url dosnt match");
 
 		} else if (!actuallTitle.equals(expectedTitle)) {
-			fail("title dosnt match");
+			AssertJUnit.fail("title dosnt match");
 
 		}
 
@@ -80,13 +85,13 @@ public class ButtonClick_Test extends BaseTest {
 		app().pages().buttonClickPage().clickButtonClick();
 		boolean isenbled = app().pages().buttonClickPage().Confirmbuttonisdisabled();
 		if (isenbled) {
-			fail("button enbled");
+			AssertJUnit.fail("button enbled");
 
 		}
 		String actualldUrl = "https://letcode.in/buttons";
 		String expectedUrl = app().flow().currentUrl();
-		Assert.assertEquals(actualldUrl, expectedUrl);
-		Assert.assertEquals(app().pages().buttonClickPage().buttonTextVerify(), "Button");
+		AssertJUnit.assertEquals(actualldUrl, expectedUrl);
+		AssertJUnit.assertEquals(app().pages().buttonClickPage().buttonTextVerify(), "Button");
 
 	}
 
@@ -96,8 +101,8 @@ public class ButtonClick_Test extends BaseTest {
 		applib.flow().getUrl(applib.pages().buttonClickPage().openUrl());
 		applib.pages().buttonClickPage().clickButtonClick();
 		applib.pages().buttonClickPage().ClickandHoldButton();	
-		Assert.assertEquals(app().flow().currentUrl(), "https://letcode.in/buttons");
-		Assert.assertEquals(app().flow().currentTitle(), "Interact with Button fields");
+		AssertJUnit.assertEquals(app().flow().currentUrl(), "https://letcode.in/buttons");
+		AssertJUnit.assertEquals(app().flow().currentTitle(), "Interact with Button fields");
 
 	}
 
