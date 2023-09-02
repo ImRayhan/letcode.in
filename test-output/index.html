@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-firefoxTest" class="navigator-link">
-              <span class="suite-name border-failed">firefoxTest</span>
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-firefoxTest" class="navigator-link ">
-                    <span>regression.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-firefoxTest" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-firefoxTest" class="navigator-link ">
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-firefoxTest" class="navigator-link ">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-firefoxTest" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-firefoxTest" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-firefoxTest" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,31 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-firefoxTest" class="hide-methods failed suite-firefoxTest"> (hide)</a> <!-- hide-methods failed suite-firefoxTest -->
-                      <a href="#" panel-name="suite-firefoxTest" class="show-methods failed suite-firefoxTest"> (show)</a> <!-- show-methods failed suite-firefoxTest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-firefoxTest">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-firefoxTest" title="com.letcode.in_Test.ButtonClick_Test" class="method navigator-link" hash-for-method="buttonHoldVerify">buttonHoldVerify</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.letcode.in_Test.ButtonClick_Test" class="method navigator-link" hash-for-method="didbleButton">didbleButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-firefoxTest" title="com.letcode.in_Test.ButtonClick_Test" class="method navigator-link" hash-for-method="didbleButton">didbleButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-firefoxTest" title="com.letcode.in_Test.ButtonClick_Test" class="method navigator-link" hash-for-method="veryfingGotoHomeButton">veryfingGotoHomeButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-firefoxTest -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,158 +117,111 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-firefoxTest" class="panel firefoxTest">
-          <div class="suite-firefoxTest-class-failed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.letcode.in_Test.ButtonClick_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="buttonHoldVerify">
-                  </a> <!-- buttonHoldVerify -->
-                  <span class="method-name">buttonHoldVerify</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.letcode.in_Lib.AppLib.flow()&quot; because the return value of &quot;com.letcode.in_Test.ButtonClick_Test.app()&quot; is null
-	at com.letcode.in_Test.ButtonClick_Test.buttonHoldVerify(ButtonClick_Test.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="didbleButton">
                   </a> <!-- didbleButton -->
                   <span class="method-name">didbleButton</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.letcode.in_Lib.AppLib.flow()&quot; because the return value of &quot;com.letcode.in_Test.ButtonClick_Test.app()&quot; is null
-	at com.letcode.in_Test.ButtonClick_Test.didbleButton(ButtonClick_Test.java:87)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="veryfingGotoHomeButton">
-                  </a> <!-- veryfingGotoHomeButton -->
-                  <span class="method-name">veryfingGotoHomeButton</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.letcode.in_Lib.AppLib.flow()&quot; because the return value of &quot;com.letcode.in_Test.ButtonClick_Test.app()&quot; is null
-	at com.letcode.in_Test.ButtonClick_Test.veryfingGotoHomeButton(ButtonClick_Test.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-firefoxTest-class-failed -->
-        </div> <!-- panel firefoxTest -->
-        <div panel-name="test-xml-firefoxTest" class="panel">
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/rayhanchowdhury/eclipse-workspace/letcode.in/regression.xml</span>
+            <span class="header-content">/private/var/folders/ny/0jxhfr217tb_g8zqcgp1fqgr0000gn/T/testng-eclipse--2036358553/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;firefoxTest&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Release 2023.7 smoke Testing&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;regression&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.letcode.in_Test.ButtonClick_Test&quot;/&gt;
+      &lt;class name=&quot;com.letcode.in_Test.ButtonClick_Test&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;didbleButton&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.letcode.in_Test.ButtonClick_Test --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Release 2023.7 smoke Testing --&gt;
-&lt;/suite&gt; &lt;!-- firefoxTest --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-firefoxTest" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for firefoxTest</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Release 2023.7 smoke Testing (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-firefoxTest" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for firefoxTest</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">buttonHoldVerify</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
                 <span class="method-in-group-name">didbleButton</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">veryfingGotoHomeButton</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-firefoxTest" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for firefoxTest</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_firefoxTest');
-function tableData_firefoxTest() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'buttonHoldVerify')
+data.setCell(0, 1, 'didbleButton')
 data.setCell(0, 2, 'com.letcode.in_Test.ButtonClick_Test')
-data.setCell(0, 3, 4);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'veryfingGotoHomeButton')
-data.setCell(1, 2, 'com.letcode.in_Test.ButtonClick_Test')
-data.setCell(1, 3, 1);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'didbleButton')
-data.setCell(2, 2, 'com.letcode.in_Test.ButtonClick_Test')
-data.setCell(2, 3, 0);
-window.suiteTableData['firefoxTest']= { tableData: data, tableDiv: 'times-div-firefoxTest'}
+data.setCell(0, 3, 2813);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 ms</span>
-              <div id="times-div-firefoxTest">
-              </div> <!-- times-div-firefoxTest -->
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-firefoxTest" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for firefoxTest</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-firefoxTest" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -288,35 +231,33 @@ return data;
                 <br/>
                 <span class="ignored-method-name">veryFyingButtonOnHomePageHowTallFatButton</span>
                 <br/>
+                <span class="ignored-method-name">buttonHoldVerify</span>
+                <br/>
+                <span class="ignored-method-name">veryfingGotoHomeButton</span>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-firefoxTest" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.letcode.in_Test.ButtonClick_Test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">buttonHoldVerify</span>
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">didbleButton</span>
-                <span class="method-start">7 ms</span>
+                <span class="method-start">2766 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">veryfingGotoHomeButton</span>
-                <span class="method-start">8 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">5580 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
