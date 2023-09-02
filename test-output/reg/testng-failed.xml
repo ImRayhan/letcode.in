@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [reg]">
+  <test thread-count="5" name="release 2023.9 sanity(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.letcode.in_Test.ButtonClick_Test">
+        <methods>
+          <include name="veryFyingButtonOnHomePageHowTallFatButton"/>
+          <include name="veryfingGotoHomeButton"/>
+          <include name="buttonHoldVerify"/>
+          <include name="didbleButton"/>
+        </methods>
+      </class> <!-- com.letcode.in_Test.ButtonClick_Test -->
+    </classes>
+  </test> <!-- release 2023.9 sanity(failed) -->
+</suite> <!-- Failed suite [reg] -->

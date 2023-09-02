@@ -7,6 +7,7 @@ import com.letcode.in_Pages.ButtonClick_Page;
 import com.letcode.in_Pages.Input_Page;
 import com.letcode.in_Pages.RadioButton_Page;
 import com.letcode.in_Pages.Select_Page;
+import com.letcode.in_Pages.Window_Page;
 
 public class PageLib {
 	WebDriver driver;
@@ -14,6 +15,7 @@ public class PageLib {
 	ButtonClick_Page buttonClickPage;
 	Select_Page selectPage;
 	RadioButton_Page radioButtonPage;
+	Window_Page windowPage;
 
 	public PageLib(WebDriver driver) {
 		this.driver = driver;
@@ -21,6 +23,7 @@ public class PageLib {
 		buttonClickPage = new ButtonClick_Page(driver);
 		selectPage = new Select_Page(driver);
 		radioButtonPage = new RadioButton_Page(driver);
+		windowPage = new Window_Page(driver);
 		
 		
 
@@ -43,6 +46,12 @@ public class PageLib {
 	
 	public RadioButton_Page radioButton() {
 		return radioButtonPage;
+		
+	}
+	
+	public Window_Page window() {
+		return windowPage;
+		
 		
 	}
 

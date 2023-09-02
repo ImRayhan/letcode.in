@@ -14,13 +14,13 @@ public class Window_Elements {
 	}
 	
 	
-	@FindBy(xpath = "//a[normalize-space()='Tabs']")
+	@FindBy(xpath = "(//a[normalize-space()='Tabs'])[1]")
 	public WebElement windowElement;
 	
-	@FindBy(xpath = "//button[@id='home']")
+	@FindBy(css = "#home")
 	public WebElement openHomePageElement;
 	
-	@FindBy(xpath = "//button[@id='multi']")
+	@FindBy(xpath  = "//*[@id=\"multi\"]")
 	public WebElement multiWindowElement;
 
 }
