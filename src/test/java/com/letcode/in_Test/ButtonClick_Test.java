@@ -1,6 +1,8 @@
 package com.letcode.in_Test;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -15,7 +17,7 @@ import org.testng.annotations.Test;
 
 public class ButtonClick_Test extends BaseTest {
 
-	@Test(groups = "a")
+	@Test(groups = {"a"})
 	public void veryFyingButtonOnHomePageHowTallFatButton() {
 		app().flow().getUrl(app().pages().buttonClickPage().openUrl());
 		app().pages().buttonClickPage().clickButtonClick();
@@ -28,10 +30,10 @@ public class ButtonClick_Test extends BaseTest {
 		String actuallTitle = "Interact with Button fields";
 		String expectedTitle = app().flow().currentTitle();
 		if (!actualldUrl.equals(expectedUrl)) {
-			Assert.fail("url dosnt match");
+			AssertJUnit.fail("url dosnt match");
 
 		} else if (!actuallTitle.equals(expectedTitle)) {
-			Assert.fail("title dosnt match");
+			AssertJUnit.fail("title dosnt match");
 
 		}
 
@@ -51,10 +53,10 @@ public class ButtonClick_Test extends BaseTest {
 			app().flow().back();
 
 		} else if (!expectedTitle.equals(actuallTitle)) {
-			Assert.fail("title dosnt match");
+			AssertJUnit.fail("title dosnt match");
 
 		} else {
-			Assert.fail("dosnt gone througth the page expected");
+			AssertJUnit.fail("dosnt gone througth the page expected");
 		}
 		String expectedUrl = app().flow().currentUrl();
 		AssertJUnit.assertEquals(actualldUrl, expectedUrl);
@@ -72,10 +74,10 @@ public class ButtonClick_Test extends BaseTest {
 		String actuallTitle = "Interact with Button fields";
 		String expectedTitle = app().flow().currentTitle();
 		if (!actualldUrl.equals(expectedUrl)) {
-			Assert.fail("url dosnt match");
+			AssertJUnit.fail("url dosnt match");
 
 		} else if (!actuallTitle.equals(expectedTitle)) {
-			Assert.fail("title dosnt match");
+			AssertJUnit.fail("title dosnt match");
 
 		}
 
@@ -88,7 +90,7 @@ public class ButtonClick_Test extends BaseTest {
 		app().pages().buttonClickPage().clickButtonClick();
 		boolean isenbled = app().pages().buttonClickPage().Confirmbuttonisdisabled();
 		if (isenbled) {
-			Assert.fail("button enbled");
+			AssertJUnit.fail("button enbled");
 
 		}
 		String actualldUrl = "https://letcode.in/buttons";

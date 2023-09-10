@@ -1,0 +1,13 @@
+
+<suite name="Suite">
+	<parameter name="browsers" value="firefox"></parameter>
+  <test name="Test">
+	<groups>
+		  <run><include name="regression"></include></run>
+	  </groups>
+	  
+ <classes>
+	 <class name="com.letcode.in_Test.ButtonClick_Test"></class>
+ </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

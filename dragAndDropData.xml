@@ -1,0 +1,11 @@
+<suite name="testData">
+	<Parameters>
+		<parameter name="Browser" value="firefox" />
+		<parameter name="dragData" value="https://letcode.in/draggable" />
+	</Parameters>
+	<test name="DataTest">
+		<classes>
+			<class name="com.letcode.in_Test.DragAndDrop_Test" />
+		</classes>
+	</test>
+</suite>

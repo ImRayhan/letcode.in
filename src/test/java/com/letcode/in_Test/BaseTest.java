@@ -1,9 +1,9 @@
 package com.letcode.in_Test;
 
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
@@ -25,8 +25,9 @@ public class BaseTest {
 	AppLib applib;
 
 
+
 	@Parameters("browsers")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp(@Optional("chrome") String browser) {
 		if (browser.equals("chrome")) {
 			driver = new ChromeDriver();
@@ -38,7 +39,6 @@ public class BaseTest {
 			driver = new EdgeDriver();
 
 		}
-		
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -46,7 +46,8 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod
+
+	@AfterMethod(alwaysRun = true)
 	public void tearUp() {
 		// driver.quit();
 
